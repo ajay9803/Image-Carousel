@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 1px solid red;
+}
+
+.body {
+  background-image: linear-gradient(to right, #3abef9, #3572ef, #050c9c);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 40px;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.carousel-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.the-carousel {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.main-wrapper {
+  display: flex;
+  align-items: center;
+  width: 90vw;
+  overflow: hidden;
+  position: relative;
+  height: 50vh;
+}
+
+.carousel-image {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: transform 1s ease-in-out;
+}
+
+.arrow-icon {
+  z-index: 1;
+  height: 50px;
+  width: 50px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.dots-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.active {
+  background-color: white;
+}
+
+/* Reduce the carousel-width on large screens */
+
+@media only screen and (min-width: 768px) {
+  .main-wrapper {
+    width: 60vw;
+  }
+}
