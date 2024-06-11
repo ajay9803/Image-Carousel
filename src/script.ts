@@ -37,7 +37,7 @@ const createCarousel = (
     carouselWrapper.appendChild(img);
   });
 
-// Append elements in order
+  // Append elements in order
 
   carouselContainer.appendChild(carouselWrapper);
   mainWrapper.appendChild(prevButton);
@@ -55,14 +55,29 @@ const createCarousel = (
   new Carousel(carouselDiv, duration);
 };
 
-const images = [
+const images1 = [
   "https://hatrabbits.com/wp-content/uploads/2017/01/random.jpg",
   "https://images.pexels.com/photos/3844788/pexels-photo-3844788.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
   "https://cdn.pixabay.com/photo/2016/07/07/16/46/dice-1502706_640.jpg",
   "https://img.traveltriangle.com/blog/wp-content/uploads/2018/09/covera-gh.jpg",
 ];
 
+const images2 = [
+  "https://hips.hearstapps.com/hmg-prod/images/alpe-di-siusi-sunrise-with-sassolungo-or-langkofel-royalty-free-image-1623254127.jpg",
+  "https://travel.home.sndimg.com/content/dam/images/travel/fullset/2012/02/23/24/mount-everest.rend.hgtvcom.1280.1280.suffix/1491583263811.jpeg",
+  "https://img.traveltriangle.com/blog/wp-content/uploads/2018/09/covera-gh.jpg",
+];
+
+const images3 = [
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/View_of_Empire_State_Building_from_Rockefeller_Center_New_York_City_dllu_%28cropped%29.jpg/800px-View_of_Empire_State_Building_from_Rockefeller_Center_New_York_City_dllu_%28cropped%29.jpg",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/New_york_times_square-terabass.jpg/640px-New_york_times_square-terabass.jpg",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/New_york_times_square-terabass.jpg/640px-New_york_times_square-terabass.jpg",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/New_york_times_square-terabass.jpg/640px-New_york_times_square-terabass.jpg",
+  "https://cdn.thecollector.com/wp-content/uploads/2023/11/tallest-mountains-in-the-world.jpg",
+  "https://images.immediate.co.uk/production/volatile/sites/30/2014/01/Top-10-foods-to-try-in-Japan-9763a03.jpg?resize=768,574",
+];
+
 // Initialize carousels with different images and slide-duration
-createCarousel("carousel-container-1", images, 3000);
-createCarousel("carousel-container-2", images, 5000);
-createCarousel("carousel-container-3", images, 1000);
+createCarousel("carousel-container-1", images1, 3000);
+createCarousel("carousel-container-2", images2, 5000);
+createCarousel("carousel-container-3", images3, 1000);
